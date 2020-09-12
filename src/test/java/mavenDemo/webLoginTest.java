@@ -13,6 +13,7 @@ public class webLoginTest {
 	{
 		String result = wl.webLoginChrome();
 		Assert.assertEquals(result, "JavaByKiran | Dashboard");
+		System.out.println("The actual result is: "+ result);
 	}
 	
 	
