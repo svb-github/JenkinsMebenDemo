@@ -1,0 +1,73 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 51.389 sec <<< FAILURE!
+subtractionTest(mavenDemo.mathsLogicTest)  Time elapsed: 0.099 sec  <<< FAILURE!
+java.lang.AssertionError: expected [5] but found [1]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at mavenDemo.mathsLogicTest.subtractionTest(mathsLogicTest.java:22)
+
+test03(mavenDemo.webLoginTest)  Time elapsed: 45.944 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 83
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN-PC', ip: '192.168.0.104', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x01679563+2725219]
+	Ordinal0 [0x01578551+1672529]
+	Ordinal0 [0x01460359+525145]
+	Ordinal0 [0x013F0B77+68471]
+	Ordinal0 [0x013ED32C+54060]
+	Ordinal0 [0x0140CC37+183351]
+	Ordinal0 [0x0140CA3D+182845]
+	Ordinal0 [0x0140A94B+174411]
+	Ordinal0 [0x013F2528+75048]
+	Ordinal0 [0x013F35A0+79264]
+	Ordinal0 [0x013F3539+79161]
+	Ordinal0 [0x0158D607+1758727]
+	GetHandleVerifier [0x01796546+1050150]
+	GetHandleVerifier [0x01796291+1049457]
+	GetHandleVerifier [0x017A10D7+1094071]
+	GetHandleVerifier [0x01796B46+1051686]
+	Ordinal0 [0x01585B06+1727238]
+	Ordinal0 [0x0158EB7B+1764219]
+	Ordinal0 [0x0158ECE3+1764579]
+	Ordinal0 [0x015A4C05+1854469]
+	BaseThreadInitThunk [0x75EF343D+18]
+	RtlInitializeExceptionChain [0x77E89812+99]
+	RtlInitializeExceptionChain [0x77E897E5+54]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at mavenDemo.webLogin.webLoginChrome(webLogin.java:10)
+	at mavenDemo.webLoginTest.test03(webLoginTest.java:14)
+
